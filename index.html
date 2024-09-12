@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es-uy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinko Radio</title>
+    <script src='https://cdn.tailwindcss.com'></script>
+    <script src='https://kit.fontawesome.com/cea33d77ef.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="w-full h-screen bg-gray-950 flex xl:items-center justify-center">
+    
+    <button id="next" class="top-5 left-10 absolute text-7xl text-blue-800 mr-4">
+        <i class="fa-solid fa-forward"></i>
+    </button>
+
+    <div class="container w-full mt-24 md:mt-0 xl:w-2/6 h-4/6 xl:h-5/6 bg-gray-100 rounded-xl flex items-start justify-between p-4 flex-col">
+        <header class="w-full h-1/12 flex items-center justify-between mb-4">
+            <div class="left text-5xl text-green-700">
+                <i class="fa-solid fa-circle-left"></i>
+            </div>
+            <div class="kinkoRadio text-red-700 font-inter text-xl font-black">
+                <p>REPRODUCIENDO:</p>
+            </div>
+            <div class="right text-5xl text-orange-700">
+                <i class="fa-solid fa-circle-plus"></i>
+            </div>
+        </header>
+        
+        <div class="w-full h-5/6 flex items-center justify-start flex-col">
+            <picture class="song-image w-64 h-64 rounded-full bg-red-300 mb-4 overflow-hidden">
+                <img id="album-art" src="assets/media/somosElShow.jpg" alt="Ep">
+            </picture>
+            <div class="w-full flex items-center justify-start flex-col">
+                <h2 id="song-title" class="text-3xl font-poppins font-bold text-gray-950">Somos El Show</h2>
+                <p id="song-artist" class="text-xl font-normal font-poppins text-gray-600">Ramma, Ara</p>
+            </div>
+        </div>
+
+        <div class="h-1/6 w-full flex items-center justify-center pb-2">
+            
+            <button id="play" class="text-7xl text-red-800">
+                <i class="fa-solid fa-circle-play"></i>
+            </button>
+        </div>
+    </div>
+
+    <audio id="audio"></audio>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
