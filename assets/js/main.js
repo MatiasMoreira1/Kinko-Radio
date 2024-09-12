@@ -4,6 +4,8 @@ const songTitle = document.getElementById('song-title');
 const songArtist = document.getElementById('song-artist');
 const albumArt = document.getElementById('album-art'); 
 const nextButton = document.getElementById('next');
+const statusText = document.querySelector('.kinkoRadio p');
+const spans = statusText.querySelectorAll('span');
 
 let isPlaying = false;
 let currentSongIndex = 0;
@@ -176,3 +178,18 @@ audio.addEventListener('ended', function() {
         playNext();
     }
 });
+
+function changeStatusColor() {
+    const colors = ['text-green-600', 'text-red-600', 'text-orange-600'];
+    let colorIndex = colors.length - 1; // Comienza desde el último color
+
+    setInterval(() => {
+        spans.forEach((span, i) => {
+            // Alterna los colores en cada span siguiendo el patrón en la dirección opuesta
+            span.className = colors[(colorIndex + i) % colors.length];
+        });
+        colorIndex = (colorIndex - 1 + colors.length) % colors.length; // Mueve hacia atrás en el patrón
+    }, 400); // Cambia cada 1 segundo (1000 ms)
+}
+
+changeStatusColor();
