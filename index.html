@@ -10,13 +10,13 @@
     <link rel="shortcut icon" href="assets/media/portadas/kinko.png" type="image/x-icon">
 </head>
 
-<body class="w-full h-screen bg-gray-950 flex xl:items-center justify-center">
+<body class="w-full h-screen bg-gray-950 flex items-center justify-center">
     
     <button id="next" class="top-5 left-5 absolute text-4xl text-blue-800 mr-4">
         <i class="fa-solid fa-forward"></i>
     </button>
 
-    <div class="container w-full mt-24 md:mt-0 xl:w-2/6 h-4/6 xl:h-5/6 bg-gray-100 rounded-xl flex items-start justify-between p-4 flex-col">
+    <div class="container w-full mt-24 md:mt-0 xl:w-2/6 h-screen xl:h-4/6 xl:h-5/6 bg-gray-100 rounded-xl flex items-start justify-between p-4 flex-col">
         <header class="w-full h-1/12 flex items-center justify-between mb-4">
             <div class="right w-16 text-orange-700">
                 <img src="assets/media/portadas/kinko.png" alt="">
@@ -24,22 +24,22 @@
             <div class="kinkoRadio font-inter text-xl font-black">
                 <p><span class="text-green-600">REPR</span><span class="text-red-600">ODUCI</span><span class="text-orange-600">ENDO</span></p>
             </div>
-            <div class="right text-5xl text-orange-700">
+            <a class="right text-5xl text-orange-700" href="#">
                 <i class="fa-solid fa-circle-plus"></i>
-            </div>
+            </a>
         </header>
         
         <div class="w-full h-4/6 flex items-center justify-start flex-col">
             <picture class="song-image h-full rounded-full bg-red-300 mb-4 overflow-hidden">
                 <img id="album-art" src="assets/media/somosElShow.jpg" alt="Ep" class="object-cover w-full h-full">
             </picture>
-            <div class="w-full flex items-center justify-start flex-col">
-                <h2 id="song-title" class="text-3xl xl:text-4xl 2xl:text-6xl font-poppins font-bold text-gray-950">Somos El Show</h2>
+            <div class="w-full flex items-center justify-start flex-col text-center">
+                <h2 id="song-title" class="text-3xl xl:text-4xl 2xl:text-5xl font-poppins font-bold text-gray-950">Somos El Show</h2>
                 <p id="song-artist" class="text-xl font-normal font-poppins text-gray-600">Ramma, Ara</p>
             </div>
         </div>
 
-        <div class="h-1/6 w-full flex items-center justify-center ">
+        <div class="h-1/6 w-full flex items-center justify-center pb-2">
             
             <button id="play" class="text-7xl 2xl:text-9xl text-red-800">
                 <i class="fa-solid fa-circle-play"></i>
