@@ -8,6 +8,7 @@ const statusText = document.querySelector('.kinkoRadio p');
 const spans = statusText.querySelectorAll('span');
 const albumArtElement = document.querySelector('.song-image'); 
 
+const silence = document.getElementById("silence");
 
 let isPlaying = false;
 let currentSongIndex = 0;
@@ -197,10 +198,13 @@ playButton.addEventListener('click', function() {
     if (isPlaying) {
         audio.pause();
         playButton.innerHTML = '<i class="fa-solid fa-circle-play"></i>';
+        changeStatusColorWhite();
+        clearInterval(colorInterval); 
     } else {
         audio.play();
         playButton.innerHTML = '<i class="fa-solid fa-circle-pause"></i>';
         albumArtElement.classList.add('spin'); 
+        changeStatusColor();
     }
     isPlaying = !isPlaying;
 });
@@ -208,54 +212,45 @@ playButton.addEventListener('click', function() {
 // Cargar la primera canción al inicio
 loadMedia(playlist[currentSongIndex]);
 
-// Cuando termina la canción o anuncio, carga el siguiente
-audio.addEventListener('ended', function() {
-    if (isAdPlaying) {
-        // Si un anuncio ha terminado, vuelve a las canciones
-        isAdPlaying = false;
-        loadMedia(playlist[currentSongIndex]);
-        audio.play();
-    } else {
-        // Solo incrementamos el contador de canciones si no es un anuncio
-        songCounter++;
-        currentSongIndex = (currentSongIndex + 1) % playlist.length;
-
-        // Cada 3 canciones, reproduce un anuncio
-        if (songCounter % 3 === 0) {
-            const adIndex = Math.floor(Math.random() * ads.length); // Selecciona un anuncio al azar
-            isAdPlaying = true;
-            loadMedia(ads[adIndex]);
-            audio.play();
-        } else {
-            loadMedia(playlist[currentSongIndex]);
-            audio.play();
-        }
-    }
-});
 
 // Función para cargar la siguiente canción o anuncio
 function playNext() {
     if (isAdPlaying) {
         // Si estamos en un anuncio, detener y volver a la lista de canciones
         isAdPlaying = false;
+    }else if(isAdPlaying == true) {
+        // Incrementar el contador de canciones y avanzar en el índice
+        songCounter++;
+        currentSongIndex = (currentSongIndex + 1) % playlist.length;
+    }else{
+        // Incrementar el contador de canciones y avanzar en el índice
+        songCounter++;
+        currentSongIndex = (currentSongIndex + 1) % playlist.length;
     }
-    currentSongIndex = (currentSongIndex + 1) % playlist.length;
-    songCounter++;
     
     // Reproducir anuncio si corresponde
     if (songCounter % 3 === 0) {
         const adIndex = Math.floor(Math.random() * ads.length); // Selecciona un anuncio al azar
         loadMedia(ads[adIndex]);
+        isAdPlaying = true; // Marcar que un anuncio está en reproducción
     } else {
         loadMedia(playlist[currentSongIndex]);
     }
-    audio.play();
+
+    clearInterval(colorInterval)
+    changeStatusColor();
+    // Reproducir el siguiente audio (anuncio o canción)
+    audio.play().catch((error) => {
+        console.error('Error al reproducir el audio:', error);
+    });
 }
 
 // Manejo del botón "Siguiente"
-nextButton.addEventListener('click', function() {
-    playNext();
-});
+function playNextAndMore(){
+    playButton.innerHTML = '<i class="fa-solid fa-circle-pause"></i>';
+    playNext()
+}
+nextButton.addEventListener('click', playNextAndMore);
 
 // Modificar el evento 'ended' para evitar repetición del botón "Siguiente" si se está en un anuncio
 audio.addEventListener('ended', function() {
@@ -268,19 +263,58 @@ audio.addEventListener('ended', function() {
     }
 });
 
-
-
 function changeStatusColor() {
     const colors = ['text-green-600', 'text-red-600', 'text-orange-600'];
     let colorIndex = colors.length - 1; 
 
-    setInterval(() => {
+    colorInterval = setInterval(() => { // Guardar el intervalo en una variable
         spans.forEach((span, i) => {
-            
             span.className = colors[(colorIndex + i) % colors.length];
         });
-        colorIndex = (colorIndex - 1 + colors.length) % colors.length; 
+        colorIndex = (colorIndex - 1 + colors.length) % colors.length;
     }, 400); 
 }
 
-changeStatusColor();
+// changeStatusColor();
+
+function changeStatusColorWhite() {
+    spans.forEach((span) => {
+        span.className = 'text-white';
+    });
+
+    clearInterval(colorInterval); 
+}
+
+
+function setVolume(vol){
+    audio.volume = vol
+}
+volumen.addEventListener("change",function(ev){
+    var newVolumen = ev.currentTarget.value % 100
+    setVolume(newVolumen)
+    if(newVolumen == 0){
+        silence.classList.remove("stroke-[#525252]")
+        silence.classList.add("stroke-red-500")
+    }else if(newVolumen !== 0){
+        silence.classList.remove("stroke-red-500")
+        silence.classList.add("stroke-[#525252]")
+    }
+  },true);
+
+
+silence.addEventListener('click', ()=>{
+    if(audio.volume == 0){
+        setVolume(1)
+        volumen.value = 1
+        silence.classList.remove("stroke-red-500")
+        silence.classList.add("stroke-[#525252]")
+    }else{
+        setVolume(0)
+        volumen.value = 0
+        silence.classList.remove("stroke-[#525252]")
+        silence.classList.add("stroke-red-500")
+    }
+})
+
+
+setVolume(0.5)
