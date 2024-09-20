@@ -208,54 +208,39 @@ playButton.addEventListener('click', function() {
 // Cargar la primera canción al inicio
 loadMedia(playlist[currentSongIndex]);
 
-// Cuando termina la canción o anuncio, carga el siguiente
-audio.addEventListener('ended', function() {
-    if (isAdPlaying) {
-        // Si un anuncio ha terminado, vuelve a las canciones
-        isAdPlaying = false;
-        loadMedia(playlist[currentSongIndex]);
-        audio.play();
-    } else {
-        // Solo incrementamos el contador de canciones si no es un anuncio
-        songCounter++;
-        currentSongIndex = (currentSongIndex + 1) % playlist.length;
-
-        // Cada 3 canciones, reproduce un anuncio
-        if (songCounter % 3 === 0) {
-            const adIndex = Math.floor(Math.random() * ads.length); // Selecciona un anuncio al azar
-            isAdPlaying = true;
-            loadMedia(ads[adIndex]);
-            audio.play();
-        } else {
-            loadMedia(playlist[currentSongIndex]);
-            audio.play();
-        }
-    }
-});
 
 // Función para cargar la siguiente canción o anuncio
 function playNext() {
     if (isAdPlaying) {
         // Si estamos en un anuncio, detener y volver a la lista de canciones
         isAdPlaying = false;
+    }else if(isAdPlaying == true) {
+        // Incrementar el contador de canciones y avanzar en el índice
+        songCounter++;
+        currentSongIndex = (currentSongIndex + 1) % playlist.length;
+    }else{
+        // Incrementar el contador de canciones y avanzar en el índice
+        songCounter++;
+        currentSongIndex = (currentSongIndex + 1) % playlist.length;
     }
-    currentSongIndex = (currentSongIndex + 1) % playlist.length;
-    songCounter++;
     
     // Reproducir anuncio si corresponde
     if (songCounter % 3 === 0) {
         const adIndex = Math.floor(Math.random() * ads.length); // Selecciona un anuncio al azar
         loadMedia(ads[adIndex]);
+        isAdPlaying = true; // Marcar que un anuncio está en reproducción
     } else {
         loadMedia(playlist[currentSongIndex]);
     }
-    audio.play();
+
+    // Reproducir el siguiente audio (anuncio o canción)
+    audio.play().catch((error) => {
+        console.error('Error al reproducir el audio:', error);
+    });
 }
 
 // Manejo del botón "Siguiente"
-nextButton.addEventListener('click', function() {
-    playNext();
-});
+nextButton.addEventListener('click', playNext);
 
 // Modificar el evento 'ended' para evitar repetición del botón "Siguiente" si se está en un anuncio
 audio.addEventListener('ended', function() {
@@ -284,3 +269,5 @@ function changeStatusColor() {
 }
 
 changeStatusColor();
+
+audio.volume = 0.3
