@@ -317,4 +317,4 @@ silence.addEventListener('click', ()=>{
 })
 
 
-setVolume(0.5)
+// setVolume(0.5)
