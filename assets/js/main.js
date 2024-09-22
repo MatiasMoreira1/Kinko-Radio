@@ -77,8 +77,6 @@ const playlist = [
         src: 'assets/media/audio/camavinga.mp3',
         albumArt: 'assets/media/portadas/camavinga.jpg'
     },
-    // Puedes agregar más canciones aquí
-    // Nuevas Canciones
     {
         title: 'Mal Hablado RMX',
         artist: 'Joaquin Da Rosa, CLOUD, ElVecino',
@@ -145,7 +143,246 @@ const playlist = [
         src: 'assets/media/audio/noSoyYo.mp3',
         albumArt: 'assets/media/portadas/noSoyYo.jpg'
     },
-
+    {
+        title: 'Inocente',
+        artist: 'Roze, Peipper',
+        src: 'assets/media/audio/inocente.mp3',
+        albumArt: 'assets/media/portadas/inocente.jpg'
+    },
+    {
+        title: 'Que Sed',
+        artist: 'Luck Ra, Ulises Bueno',
+        src: 'assets/media/audio/quesed.mp3',
+        albumArt: 'assets/media/portadas/quesed.jpg'
+    },
+    {
+        title: 'Se Que Vas a Doler',
+        artist: 'Luck Ra, The La Planta',
+        src: 'assets/media/audio/sqvad.mp3',
+        albumArt: 'assets/media/portadas/sqvad.jpg'
+    },
+    {
+        title: 'Rara Vez',
+        artist: 'Milo J',
+        src: 'assets/media/audio/raravez.mp3',
+        albumArt: 'assets/media/portadas/raravez.jpg'
+    },
+    {
+        title: 'Y Te Vas',
+        artist: 'Luck Ra',
+        src: 'assets/media/audio/ytevas.mp3',
+        albumArt: 'assets/media/portadas/ytevas.jpg'
+    },
+    {
+        title: 'SINVERGÜENZA',
+        artist: 'Emanero, Karina, Angela...',
+        src: 'assets/media/audio/sinver.mp3',
+        albumArt: 'assets/media/portadas/sinver.jpg'
+    },
+    {
+        title: 'Un Siglo Sin Ti',
+        artist: 'Luck Ra, Chayanne',
+        src: 'assets/media/audio/unsiglo.mp3',
+        albumArt: 'assets/media/portadas/unsiglo.jpg'
+    },
+    {
+        title: 'Si Me Disculpo Ahora',
+        artist: 'Luck Ra, Miranda',
+        src: 'assets/media/audio/disculpo.mp3',
+        albumArt: 'assets/media/portadas/disculpo.jpg'
+    },
+    {
+        title: 'Adicto',
+        artist: 'Emanero, La Konga, Antonio',
+        src: 'assets/media/audio/adicto.mp3',
+        albumArt: 'assets/media/portadas/adicto.jpg'
+    },
+    {
+        title: 'Atorrante',
+        artist: 'Emanero, Ulises, Migrantes',
+        src: 'assets/media/audio/atorrante.mp3',
+        albumArt: 'assets/media/portadas/atorrante.jpg'
+    },
+    {
+        title: 'Bandido',
+        artist: 'Emanero, FMK, Estani, Rusher',
+        src: 'assets/media/audio/bandido.mp3',
+        albumArt: 'assets/media/portadas/bandido.jpg'
+    },
+    {
+        title: 'Como Vos Lo Haces',
+        artist: 'Emanero',
+        src: 'assets/media/audio/comovos.mp3',
+        albumArt: 'assets/media/portadas/comovos.jpg'
+    },
+    {
+        title: 'Ladrona',
+        artist: 'Emanero, BM, Onda, Mario',
+        src: 'assets/media/audio/ladrona.mp3',
+        albumArt: 'assets/media/portadas/ladrona.jpg'
+    },
+    {
+        title: 'Mamichula',
+        artist: 'Trueno, Nicki Nicole',
+        src: 'assets/media/audio/mamichula.mp3',
+        albumArt: 'assets/media/portadas/mamichula.jpg'
+    },
+    {
+        title: 'Feel Me?',
+        artist: 'Trueno',
+        src: 'assets/media/audio/feelme.mp3',
+        albumArt: 'assets/media/portadas/feelme.jpg'
+    },
+    {
+        title: 'Real Gangsta Love',
+        artist: 'Trueno',
+        src: 'assets/media/audio/realgangsta.mp3',
+        albumArt: 'assets/media/portadas/realgangsta.jpg'
+    },
+    {
+        title: 'Tranky Funky',
+        artist: 'Trueno',
+        src: 'assets/media/audio/tranky.mp3',
+        albumArt: 'assets/media/portadas/tranky.jpg'
+    },
+    {
+        title: 'Muriendome',
+        artist: 'Duki, Khea',
+        src: 'assets/media/audio/muriendome.mp3',
+        albumArt: 'assets/media/portadas/muriendome.jpg'
+    },
+    {
+        title: 'Como Le Digo',
+        artist: 'Khea',
+        src: 'assets/media/audio/comoledigo.mp3',
+        albumArt: 'assets/media/portadas/comoledigo.jpg'
+    },
+    {
+        title: 'Una Foto Remix',
+        artist: 'Mesita, Nicki, Emilia, Tiago PZK',
+        src: 'assets/media/audio/unafoto.mp3',
+        albumArt: 'assets/media/portadas/unafoto.jpg'
+    },
+    {
+        title: 'Wacha',
+        artist: 'Duki, Khea',
+        src: 'assets/media/audio/wacha.mp3',
+        albumArt: 'assets/media/portadas/wacha.jpg'
+    },
+    {
+        title: 'Neon',
+        artist: 'Lit Killah',
+        src: 'assets/media/audio/neon.mp3',
+        albumArt: 'assets/media/portadas/neon.jpg'
+    },
+    {
+        title: 'Los Del Espacio',
+        artist: 'Lit Killah, Duki, FMK...',
+        src: 'assets/media/audio/espacio.mp3',
+        albumArt: 'assets/media/portadas/espacio.jpg'
+    },
+    {
+        title: 'La Trampa es Ley',
+        artist: 'Lit Killah',
+        src: 'assets/media/audio/trampa.mp3',
+        albumArt: 'assets/media/portadas/trampa.jpg'
+    },
+    {
+        title: 'Mala Mia',
+        artist: 'Lit Killah, Duki',
+        src: 'assets/media/audio/malamia.mp3',
+        albumArt: 'assets/media/portadas/malamia.jpg'
+    },
+    {
+        title: 'En La Oscuridad',
+        artist: 'Lit Killah, Maria Becerra',
+        src: 'assets/media/audio/enlaoscuridad.mp3',
+        albumArt: 'assets/media/portadas/enlaoscuridad.jpg'
+    },
+    {
+        title: 'Dejame Tranki',
+        artist: 'Lit Killah, Khea',
+        src: 'assets/media/audio/dejametranki.mp3',
+        albumArt: 'assets/media/portadas/dejametranki.jpg'
+    },
+    {
+        title: 'Call Me Maybe',
+        artist: 'Duki',
+        src: 'assets/media/audio/callme.mp3',
+        albumArt: 'assets/media/portadas/callme.jpg'
+    },
+    {
+        title: 'Sexy',
+        artist: 'Eich, Duki, Khea',
+        src: 'assets/media/audio/sexy.mp3',
+        albumArt: 'assets/media/portadas/sexy.jpg'
+    },
+    {
+        title: 'No Me Conocen',
+        artist: 'Bandido, Duki, Tiago, Rei',
+        src: 'assets/media/audio/nomeconocen.mp3',
+        albumArt: 'assets/media/portadas/nomeconocen.jpg'
+    },
+    {
+        title: 'Lo Olvidaste',
+        artist: 'Dani, Duki',
+        src: 'assets/media/audio/loolvidaste.mp3',
+        albumArt: 'assets/media/portadas/loolvidaste.jpg'
+    },
+    {
+        title: 'Suavemente',
+        artist: 'Elvis Crespo',
+        src: 'assets/media/audio/suavemente.mp3',
+        albumArt: 'assets/media/portadas/suavemente.jpg'
+    },
+    {
+        title: 'Tu Sonrisa',
+        artist: 'Elvis Crespo',
+        src: 'assets/media/audio/tusonrisa.mp3',
+        albumArt: 'assets/media/portadas/tusonrisa.jpg'
+    },
+    {
+        title: 'Devuelveme a mi chica',
+        artist: 'Hombres G',
+        src: 'assets/media/audio/michica.mp3',
+        albumArt: 'assets/media/portadas/michica.jpg'
+    },
+    {
+        title: 'Y Dime',
+        artist: 'Agrupacion Marilyn',
+        src: 'assets/media/audio/ydime.mp3',
+        albumArt: 'assets/media/portadas/ydime.jpg'
+    },
+    {
+        title: 'Que Ironia',
+        artist: 'Rodrigo',
+        src: 'assets/media/audio/queironia.mp3',
+        albumArt: 'assets/media/portadas/queironia.jpg'
+    },
+    {
+        title: 'Lo Mejor Del Amor',
+        artist: 'Rodrigo',
+        src: 'assets/media/audio/mejoramor.mp3',
+        albumArt: 'assets/media/portadas/mejoramor.jpg'
+    },
+    {
+        title: 'Ocho Cuarenta',
+        artist: 'Rodrigo',
+        src: 'assets/media/audio/ochocuarenta.mp3',
+        albumArt: 'assets/media/portadas/ochocuarenta.jpg'
+    },
+    {
+        title: 'Pizza Muzzarela',
+        artist: 'Los Fatales',
+        src: 'assets/media/audio/pizza.mp3',
+        albumArt: 'assets/media/portadas/pizza.jpg'
+    },
+    {
+        title: 'Emeyce',
+        artist: '3AM, Danny Ocean',
+        src: 'assets/media/audio/emeyce.mp3',
+        albumArt: 'assets/media/portadas/emeyce.jpg'
+    },
 ];
 
 // Lista de anuncios
