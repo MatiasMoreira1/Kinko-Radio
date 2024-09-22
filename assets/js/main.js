@@ -333,13 +333,13 @@ const playlist = [
         title: 'Suavemente',
         artist: 'Elvis Crespo',
         src: 'assets/media/audio/suavemente.mp3',
-        albumArt: 'assets/media/portadas/suavemente.jpg'
+        albumArt: 'assets/media/portadas/elvis.jpg'
     },
     {
         title: 'Tu Sonrisa',
         artist: 'Elvis Crespo',
         src: 'assets/media/audio/tusonrisa.mp3',
-        albumArt: 'assets/media/portadas/tusonrisa.jpg'
+        albumArt: 'assets/media/portadas/elvis.jpg'
     },
     {
         title: 'Devuelveme a mi chica',
@@ -357,19 +357,19 @@ const playlist = [
         title: 'Que Ironia',
         artist: 'Rodrigo',
         src: 'assets/media/audio/queironia.mp3',
-        albumArt: 'assets/media/portadas/queironia.jpg'
+        albumArt: 'assets/media/portadas/rodri.jpg'
     },
     {
         title: 'Lo Mejor Del Amor',
         artist: 'Rodrigo',
         src: 'assets/media/audio/mejoramor.mp3',
-        albumArt: 'assets/media/portadas/mejoramor.jpg'
+        albumArt: 'assets/media/portadas/rodri.jpg'
     },
     {
         title: 'Ocho Cuarenta',
         artist: 'Rodrigo',
         src: 'assets/media/audio/ochocuarenta.mp3',
-        albumArt: 'assets/media/portadas/ochocuarenta.jpg'
+        albumArt: 'assets/media/portadas/rodri.jpg'
     },
     {
         title: 'Pizza Muzzarela',
