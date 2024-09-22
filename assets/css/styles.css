@@ -10,7 +10,7 @@ html{
 body {
     position: relative;
     margin: 0;
-    height: 90vh;
+    height: 95vh;
 }
 
 body::before {
@@ -42,6 +42,10 @@ body::before {
 
 .font-inter{
     font-family: 'Inter', 'sans-serif'
+}
+
+.containerr{
+    height: 90vh;
 }
 
 /* CSS PERSONALIZADO DE ESTE ARCHIVO */
