@@ -291,19 +291,19 @@ const playlist = [
         title: 'Mala Mia',
         artist: 'Lit Killah, Duki',
         src: 'assets/media/audio/malamia.mp3',
-        albumArt: 'assets/media/portadas/malamia.jpg'
+        albumArt: 'assets/media/portadas/mawz.jpg'
     },
     {
         title: 'En La Oscuridad',
         artist: 'Lit Killah, Maria Becerra',
         src: 'assets/media/audio/enlaoscuridad.mp3',
-        albumArt: 'assets/media/portadas/enlaoscuridad.jpg'
+        albumArt: 'assets/media/portadas/mawz.jpg'
     },
     {
         title: 'Dejame Tranki',
         artist: 'Lit Killah, Khea',
         src: 'assets/media/audio/dejametranki.mp3',
-        albumArt: 'assets/media/portadas/dejametranki.jpg'
+        albumArt: 'assets/media/portadas/mawz.jpg'
     },
     {
         title: 'Call Me Maybe',
