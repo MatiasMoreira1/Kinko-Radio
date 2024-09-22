@@ -515,43 +515,12 @@ function changeStatusColor() {
 // changeStatusColor();
 
 function changeStatusColorWhite() {
-    spans.forEach((span) => {
-        span.className = 'text-white';
-    });
+    // spans.forEach((span) => {
+    //     span.className = '';
+    // });
 
     clearInterval(colorInterval); 
 }
-
-
-function setVolume(vol){
-    audio.volume = vol
-}
-volumen.addEventListener("change",function(ev){
-    var newVolumen = ev.currentTarget.value % 100
-    setVolume(newVolumen)
-    if(newVolumen == 0){
-        silence.classList.remove("stroke-[#525252]")
-        silence.classList.add("stroke-red-500")
-    }else if(newVolumen !== 0){
-        silence.classList.remove("stroke-red-500")
-        silence.classList.add("stroke-[#525252]")
-    }
-  },true);
-
-
-silence.addEventListener('click', ()=>{
-    if(audio.volume == 0){
-        setVolume(1)
-        volumen.value = 1
-        silence.classList.remove("stroke-red-500")
-        silence.classList.add("stroke-[#525252]")
-    }else{
-        setVolume(0)
-        volumen.value = 0
-        silence.classList.remove("stroke-[#525252]")
-        silence.classList.add("stroke-red-500")
-    }
-})
 
 
 // setVolume(0.5)
