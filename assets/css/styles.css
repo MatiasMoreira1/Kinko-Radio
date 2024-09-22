@@ -10,7 +10,7 @@ html{
 body {
     position: relative;
     margin: 0;
-    height: 95vh;
+    height: 90vh;
 }
 
 body::before {
@@ -45,7 +45,7 @@ body::before {
 }
 
 .containerr{
-    height: 90vh;
+    height: 85vh;
 }
 
 /* CSS PERSONALIZADO DE ESTE ARCHIVO */
