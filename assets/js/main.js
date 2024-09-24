@@ -383,6 +383,200 @@ const playlist = [
         src: 'assets/media/audio/emeyce.mp3',
         albumArt: 'assets/media/portadas/emeyce.jpg'
     },
+    // Puedes agregar más canciones aquí
+    {
+        title: 'Nena Maldicion',
+        artist: 'Paulo Londra, Lenny Tavarez',
+        src: 'assets/media/audio/nenamal.mp3',
+        albumArt: 'assets/media/portadas/nenamal.jpg'
+    },
+    {
+        title: 'A Por Todo',
+        artist: 'YSY A',
+        src: 'assets/media/audio/aportodo.mp3',
+        albumArt: 'assets/media/portadas/ysysmo.jpg'
+    },
+    {
+        title: 'Bailando Te Conoci',
+        artist: 'Rusherking, Duki',
+        src: 'assets/media/audio/bailando.mp3',
+        albumArt: 'assets/media/portadas/bailando.jpg'
+    },
+    {
+        title: 'Loba',
+        artist: 'Rusherking',
+        src: 'assets/media/audio/loba.mp3',
+        albumArt: 'assets/media/portadas/loba.jpg'
+    },
+    {
+        title: 'Dákiti',
+        artist: 'Bad Bunny, Jhay Cortez',
+        src: 'assets/media/audio/dakiti.mp3',
+        albumArt: 'assets/media/portadas/dakiti.jpg'
+    },
+    {
+        title: 'Sensualidad',
+        artist: 'Bad Bunny, Prince Royce, J Balvin',
+        src: 'assets/media/audio/sensualidad.mp3',
+        albumArt: 'assets/media/portadas/sensualidad.jpg'
+    },
+    {
+        title: 'Netflixxx',
+        artist: 'Brytiago, Bad Bunny',
+        src: 'assets/media/audio/netflix.mp3',
+        albumArt: 'assets/media/portadas/netflix.jpg'
+    },
+    {
+        title: 'Otro',
+        artist: 'FMK, Khea',
+        src: 'assets/media/audio/otro.mp3',
+        albumArt: 'assets/media/portadas/otro.jpg'
+    },
+    {
+        title: 'MAN$ION',
+        artist: 'Lit Killah',
+        src: 'assets/media/audio/mansion.mp3',
+        albumArt: 'assets/media/portadas/snipez.jpg'
+    },
+    {
+        title: 'Yo Se Que Tu',
+        artist: 'FMK, Rusherking, Tiago PZK, Lit Killah',
+        src: 'assets/media/audio/ysqt.mp3',
+        albumArt: 'assets/media/portadas/ysqt.jpg'
+    },
+    {
+        title: 'El Pronóstico',
+        artist: 'Lira, Kingto',
+        src: 'assets/media/audio/pronostico.mp3',
+        albumArt: 'assets/media/portadas/pronostico.jpg'
+    },
+    {
+        title: 'Sin Frenos',
+        artist: 'Eladio Carrion, Duki',
+        src: 'assets/media/audio/sinfrenos.mp3',
+        albumArt: 'assets/media/portadas/sinfrenos.jpg'
+    },
+    {
+        title: 'TQMQA',
+        artist: 'Eladio Carrion',
+        src: 'assets/media/audio/tqmqa.mp3',
+        albumArt: 'assets/media/portadas/solmaria.jpg'
+    },
+    {
+        title: 'Tu Ritmo',
+        artist: 'Eladio Carrion',
+        src: 'assets/media/audio/turitmo.mp3',
+        albumArt: 'assets/media/portadas/solmaria.jpg'
+    },
+    {
+        title: '100oMIL',
+        artist: 'Khea, C.R.O, Neo Pistea',
+        src: 'assets/media/audio/100omil.mp3',
+        albumArt: 'assets/media/portadas/trapicheo2.jpg'
+    },
+    {
+        title: 'El Don',
+        artist: 'Khea, Bhavi, LIT Killah, Asan',
+        src: 'assets/media/audio/don.mp3',
+        albumArt: 'assets/media/portadas/trapicheo2.jpg'
+    },
+    {
+        title: 'Mi Corazon',
+        artist: 'Tiago PZK',
+        src: 'assets/media/audio/corazon.mp3',
+        albumArt: 'assets/media/portadas/corazon.jpg'
+    },
+    {
+        title: 'Besame REMIX',
+        artist: 'Bhavi, Seven, Khea, Milo, Tiago, Khea, Neo',
+        src: 'assets/media/audio/besamermx.mp3',
+        albumArt: 'assets/media/portadas/besamermx.jpg'
+    },
+    {
+        title: 'Házmelo',
+        artist: 'Tiago PZK',
+        src: 'assets/media/audio/hazmelo.mp3',
+        albumArt: 'assets/media/portadas/hazmelo.jpg'
+    },
+    {
+        title: 'Entre Nosotros',
+        artist: 'Tiago PZK, LIT Killah',
+        src: 'assets/media/audio/entrenosotros.mp3',
+        albumArt: 'assets/media/portadas/entrenosotros.jpg'
+    },
+    {
+        title: 'No Dijeron Nada',
+        artist: 'Oscu',
+        src: 'assets/media/audio/nada.mp3',
+        albumArt: 'assets/media/portadas/nada.jpg'
+    },
+    {
+        title: 'Electrica',
+        artist: 'Tiago PZK, IZA',
+        src: 'assets/media/audio/electrica.mp3',
+        albumArt: 'assets/media/portadas/portales.jpg'
+    },
+    {
+        title: 'Sabor A Miel',
+        artist: 'Tiago PZK',
+        src: 'assets/media/audio/miel.mp3',
+        albumArt: 'assets/media/portadas/portales.jpg'
+    },
+    {
+        title: 'Sex & Love',
+        artist: 'Tiago PZK',
+        src: 'assets/media/audio/s&l.mp3',
+        albumArt: 'assets/media/portadas/portales.jpg'
+    },
+    {
+        title: 'Soltera REMIX',
+        artist: 'Lunay, Bad Bunny, Daddy',
+        src: 'assets/media/audio/soltera.mp3',
+        albumArt: 'assets/media/portadas/soltera.jpg'
+    },
+    {
+        title: 'Tu Tu Tu <3',
+        artist: 'Knak, COSMIC KID',
+        src: 'assets/media/audio/tutu.mp3',
+        albumArt: 'assets/media/portadas/kapsula.jpg'
+    },
+    {
+        title: 'Suave',
+        artist: 'Knak',
+        src: 'assets/media/audio/suave.mp3',
+        albumArt: 'assets/media/portadas/kapsula.jpg'
+    },
+    {
+        title: 'Que Esperan??',
+        artist: 'Matias Fisher',
+        src: 'assets/media/audio/esperan.mp3',
+        albumArt: 'assets/media/portadas/esperan.jpg'
+    },
+    {
+        title: 'Otra Vez',
+        artist: 'Diablo, Khea',
+        src: 'assets/media/audio/otravez.mp3',
+        albumArt: 'assets/media/portadas/otravez.jpg'
+    },  
+    {
+        title: 'ALIOLI',
+        artist: 'Milo J',
+        src: 'assets/media/audio/alioli.mp3',
+        albumArt: 'assets/media/portadas/166.jpg'
+    },
+    {
+        title: 'Antes De Los 20',
+        artist: 'Milo J',
+        src: 'assets/media/audio/20.mp3',
+        albumArt: 'assets/media/portadas/166.jpg'
+    },
+    // Puedes agregar mas canciones
+    // {
+    //     title: '',
+    //     artist: '',
+    //     src: 'assets/media/audio/.mp3',
+    //     albumArt: 'assets/media/portadas/.jpg'
+    // },
 ];
 
 // Lista de anuncios
@@ -453,14 +647,11 @@ loadMedia(playlist[currentSongIndex]);
 // Función para cargar la siguiente canción o anuncio
 function playNext() {
     if (isAdPlaying) {
-        // Si estamos en un anuncio, detener y volver a la lista de canciones
         isAdPlaying = false;
     }else if(isAdPlaying == true) {
-        // Incrementar el contador de canciones y avanzar en el índice
         songCounter++;
         currentSongIndex = (currentSongIndex + 1) % playlist.length;
     }else{
-        // Incrementar el contador de canciones y avanzar en el índice
         songCounter++;
         currentSongIndex = (currentSongIndex + 1) % playlist.length;
     }
@@ -482,14 +673,12 @@ function playNext() {
     });
 }
 
-// Manejo del botón "Siguiente"
 function playNextAndMore(){
     playButton.innerHTML = '<i class="fa-solid fa-circle-pause"></i>';
     playNext()
 }
 nextButton.addEventListener('click', playNextAndMore);
 
-// Modificar el evento 'ended' para evitar repetición del botón "Siguiente" si se está en un anuncio
 audio.addEventListener('ended', function() {
     if (isAdPlaying) {
         isAdPlaying = false;
@@ -504,7 +693,7 @@ function changeStatusColor() {
     const colors = ['text-green-600', 'text-red-600', 'text-orange-600'];
     let colorIndex = colors.length - 1; 
 
-    colorInterval = setInterval(() => { // Guardar el intervalo en una variable
+    colorInterval = setInterval(() => { 
         spans.forEach((span, i) => {
             span.className = colors[(colorIndex + i) % colors.length];
         });
