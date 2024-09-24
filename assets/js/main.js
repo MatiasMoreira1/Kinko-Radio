@@ -239,12 +239,12 @@ const playlist = [
         src: 'assets/media/audio/realgangsta.mp3',
         albumArt: 'assets/media/portadas/realgangsta.jpg'
     },
-    {
-        title: 'Tranky Funky',
-        artist: 'Trueno',
-        src: 'assets/media/audio/tranky.mp3',
-        albumArt: 'assets/media/portadas/tranky.jpg'
-    },
+    // {
+    //     title: 'Tranky Funky',
+    //     artist: 'Trueno',
+    //     src: 'assets/media/audio/tranky.mp3',
+    //     albumArt: 'assets/media/portadas/tranky.jpg'
+    // },
     {
         title: 'Muriendome',
         artist: 'Duki, Khea',
@@ -640,20 +640,27 @@ playButton.addEventListener('click', function() {
     isPlaying = !isPlaying;
 });
 
+function getRandomSongIndex() {
+    let newIndex;
+    do {
+        newIndex = Math.floor(Math.random() * playlist.length);
+    } while (newIndex === currentSongIndex); // Evita que se repita la misma canción
+    return newIndex;
+}
+
+// Seleccionar una canción aleatoria al cargar la página
+currentSongIndex = getRandomSongIndex();
+
 // Cargar la primera canción al inicio
 loadMedia(playlist[currentSongIndex]);
-
 
 // Función para cargar la siguiente canción o anuncio
 function playNext() {
     if (isAdPlaying) {
         isAdPlaying = false;
-    }else if(isAdPlaying == true) {
+    } else {
         songCounter++;
-        currentSongIndex = (currentSongIndex + 1) % playlist.length;
-    }else{
-        songCounter++;
-        currentSongIndex = (currentSongIndex + 1) % playlist.length;
+        currentSongIndex = getRandomSongIndex(); // Seleccionar canción aleatoria
     }
     
     // Reproducir anuncio si corresponde
@@ -665,7 +672,7 @@ function playNext() {
         loadMedia(playlist[currentSongIndex]);
     }
 
-    clearInterval(colorInterval)
+    clearInterval(colorInterval);
     changeStatusColor();
     // Reproducir el siguiente audio (anuncio o canción)
     audio.play().catch((error) => {
