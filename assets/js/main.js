@@ -640,19 +640,16 @@ playButton.addEventListener('click', function() {
     isPlaying = !isPlaying;
 });
 
-function getRandomSongIndex() {
-    let newIndex;
-    do {
-        newIndex = Math.floor(Math.random() * playlist.length);
-    } while (newIndex === currentSongIndex); // Evita que se repita la misma canción
-    return newIndex;
+// Función para barajar el playlist usando el algoritmo de Fisher-Yates
+function shufflePlaylist(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]]; // Intercambiar elementos
+    }
 }
 
-// Seleccionar una canción aleatoria al cargar la página
-currentSongIndex = getRandomSongIndex();
-
-// Cargar la primera canción al inicio
-loadMedia(playlist[currentSongIndex]);
+// Barajar la lista de reproducción al inicio
+shufflePlaylist(playlist);
 
 // Función para cargar la siguiente canción o anuncio
 function playNext() {
@@ -660,7 +657,13 @@ function playNext() {
         isAdPlaying = false;
     } else {
         songCounter++;
-        currentSongIndex = getRandomSongIndex(); // Seleccionar canción aleatoria
+        currentSongIndex++;
+        
+        // Si hemos llegado al final del playlist, barajar de nuevo
+        if (currentSongIndex >= playlist.length) {
+            shufflePlaylist(playlist);
+            currentSongIndex = 0; // Reiniciar el índice
+        }
     }
     
     // Reproducir anuncio si corresponde
@@ -679,6 +682,10 @@ function playNext() {
         console.error('Error al reproducir el audio:', error);
     });
 }
+
+// Seleccionar la primera canción de la lista barajada
+currentSongIndex = 0;
+loadMedia(playlist[currentSongIndex]);
 
 function playNextAndMore(){
     playButton.innerHTML = '<i class="fa-solid fa-circle-pause"></i>';
