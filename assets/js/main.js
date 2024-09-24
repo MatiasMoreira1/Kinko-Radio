@@ -652,56 +652,40 @@ function shufflePlaylist(array) {
 shufflePlaylist(playlist);
 
 // Función para cargar la siguiente canción o anuncio
+// Función para cargar la siguiente canción o anuncio
 function playNext() {
     if (isAdPlaying) {
+        // Si se está reproduciendo un anuncio, volver a la canción
         isAdPlaying = false;
+        loadMedia(playlist[currentSongIndex]); // Cargar la siguiente canción
     } else {
         songCounter++;
         currentSongIndex++;
-        
+
         // Si hemos llegado al final del playlist, barajar de nuevo
         if (currentSongIndex >= playlist.length) {
             shufflePlaylist(playlist);
             currentSongIndex = 0; // Reiniciar el índice
         }
-    }
-    
-    // Reproducir anuncio si corresponde
-    if (songCounter % 3 === 0) {
-        const adIndex = Math.floor(Math.random() * ads.length); // Selecciona un anuncio al azar
-        loadMedia(ads[adIndex]);
-        isAdPlaying = true; // Marcar que un anuncio está en reproducción
-    } else {
-        loadMedia(playlist[currentSongIndex]);
+
+        // Reproducir anuncio si corresponde
+        if (songCounter % 3 === 0) {
+            const adIndex = Math.floor(Math.random() * ads.length); // Selecciona un anuncio al azar
+            loadMedia(ads[adIndex]);
+            isAdPlaying = true; // Marcar que un anuncio está en reproducción
+        } else {
+            loadMedia(playlist[currentSongIndex]); // Reproducir la siguiente canción
+        }
     }
 
     clearInterval(colorInterval);
     changeStatusColor();
+
     // Reproducir el siguiente audio (anuncio o canción)
     audio.play().catch((error) => {
         console.error('Error al reproducir el audio:', error);
     });
 }
-
-// Seleccionar la primera canción de la lista barajada
-currentSongIndex = 0;
-loadMedia(playlist[currentSongIndex]);
-
-function playNextAndMore(){
-    playButton.innerHTML = '<i class="fa-solid fa-circle-pause"></i>';
-    playNext()
-}
-nextButton.addEventListener('click', playNextAndMore);
-
-audio.addEventListener('ended', function() {
-    if (isAdPlaying) {
-        isAdPlaying = false;
-        loadMedia(playlist[currentSongIndex]);
-        audio.play();
-    } else {
-        playNext();
-    }
-});
 
 function changeStatusColor() {
     const colors = ['text-green-600', 'text-red-600', 'text-orange-600'];
