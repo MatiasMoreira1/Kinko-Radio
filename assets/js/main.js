@@ -420,12 +420,7 @@ const playlist = [
         src: 'assets/media/audio/sensualidad.mp3',
         albumArt: 'assets/media/portadas/sensualidad.jpg'
     },
-    {
-        title: 'Netflixxx',
-        artist: 'Brytiago, Bad Bunny',
-        src: 'assets/media/audio/netflix.mp3',
-        albumArt: 'assets/media/portadas/netflix.jpg'
-    },
+    
     {
         title: 'Otro',
         artist: 'FMK, Khea',
