@@ -32,5 +32,4 @@ const ads = [
     // Puedes agregar más anuncios aquí
 ];
 
-
 export { ads };

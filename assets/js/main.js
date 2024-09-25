@@ -18,6 +18,8 @@ let currentSongIndex = 0;
 let songCounter = 0; 
 let isAdPlaying = false; 
 
+
+
 // Seleccionar una canción aleatoria al cargar la página
 currentSongIndex = Math.floor(Math.random() * playlist.length);
 
@@ -30,18 +32,27 @@ function loadMedia(media) {
 }
 
 playButton.addEventListener('click', function() {
-    if (isPlaying) {
+    if (audio.paused) { 
+        // Si el audio está en pausa, reproducirlo
+        audio.play().then(() => {
+            console.log('Reproduciendo la canción');
+            playButton.innerHTML = '<i class="fa-solid fa-circle-pause"></i>';
+            albumArtElement.classList.add('spin'); 
+            changeStatusColor();
+            isPlaying = true; // Cambiar estado
+        })//).catch((error) => {
+        //     console.error('Error al intentar reproducir el audio:', error);
+        // })
+        ;
+    } else {
+        // Si el audio está reproduciéndose, pausarlo
+        console.log('Pausando la canción');
         audio.pause();
         playButton.innerHTML = '<i class="fa-solid fa-circle-play"></i>';
+        albumArtElement.classList.remove('spin'); 
         changeStatusColorWhite();
-        clearInterval(colorInterval); 
-    } else {
-        audio.play();
-        playButton.innerHTML = '<i class="fa-solid fa-circle-pause"></i>';
-        albumArtElement.classList.add('spin'); 
-        changeStatusColor();
+        isPlaying = false; // Cambiar estado
     }
-    isPlaying = !isPlaying;
 });
 
 // Función para barajar el playlist usando el algoritmo de Fisher-Yates

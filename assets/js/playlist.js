@@ -377,7 +377,7 @@ const playlist = [
         title: 'A Por Todo',
         artist: 'YSY A',
         src: 'assets/media/audio/aportodo.mp3',
-        albumArt: 'assets/media/portadas/ysysmo.jpg'
+        albumArt: 'assets/media/portadas/ysymo.jpg'
     },
     {
         title: 'Bailando Te Conoci',
@@ -553,13 +553,211 @@ const playlist = [
         src: 'assets/media/audio/20.mp3',
         albumArt: 'assets/media/portadas/166.jpg'
     },
-    // Puedes agregar mas canciones
+    // Nuevas
+    {
+        title: 'Algo Me Gusta De Ti',
+        artist: 'Wisin & Yandel, Chris Brown, T-Pain',
+        src: 'assets/media/audio/deti.mp3',
+        albumArt: 'assets/media/portadas/deti.jpg'
+    },
+    {
+        title: 'Rakata',
+        artist: 'Wisin & Yandel',
+        src: 'assets/media/audio/rakata.mp3',
+        albumArt: 'assets/media/portadas/rakata.jpg'
+    },
+    {
+        title: 'Abusadora',
+        artist: 'Wisin & Yandel',
+        src: 'assets/media/audio/abusadora.mp3',
+        albumArt: 'assets/media/portadas/rakata.jpg'
+    },
+    {
+        title: 'Noche de Sexo',
+        artist: 'Wisin & Yandel, Romeo Santos',
+        src: 'assets/media/audio/sexo.mp3',
+        albumArt: 'assets/media/portadas/rakata.jpg'
+    },
+    {
+        title: 'Sexy Movimiento',
+        artist: 'Wisin & Yandel',
+        src: 'assets/media/audio/sexymov.mp3',
+        albumArt: 'assets/media/portadas/rakata.jpg'
+    },
+    {
+        title: 'Pepas',
+        artist: 'Farruko',
+        src: 'assets/media/audio/pepas.mp3',
+        albumArt: 'assets/media/portadas/pepas.jpg'
+    },
+    {
+        title: 'Si Se Da - Remix',
+        artist: 'Myke T, Farruko, Arcá, Sech, Zion',
+        src: 'assets/media/audio/siseda.mp3',
+        albumArt: 'assets/media/portadas/siseda.jpg'
+    },
+    {
+        title: 'Diles',
+        artist: 'Farruko, Ozuna, Bad Bunny, Ñengo',
+        src: 'assets/media/audio/diles.mp3',
+        albumArt: 'assets/media/portadas/diles.jpg'
+    },
+    {
+        title: 'Cositas Que Haciamos',
+        artist: 'Farruko',
+        src: 'assets/media/audio/cositas.mp3',
+        albumArt: 'assets/media/portadas/cositas.jpg'
+    },
+    {
+        title: 'Gasolina',
+        artist: 'Daddy Yankee',
+        src: 'assets/media/audio/gasolina.mp3',
+        albumArt: 'assets/media/portadas/daddy.jpg'
+    },
+    {
+        title: 'Lo Que Pasó, Pasó',
+        artist: 'Daddy Yankee',
+        src: 'assets/media/audio/loqpaso.mp3',
+        albumArt: 'assets/media/portadas/daddy.jpg'
+    },
+    {
+        title: '6AM',
+        artist: 'J Balvin, Farruko',
+        src: 'assets/media/audio/6am.mp3',
+        albumArt: 'assets/media/portadas/6am.jpg'
+    },
+    {
+        title: 'Tu Principe',
+        artist: 'Daddy Yankee, Zion & Lenox',
+        src: 'assets/media/audio/principe.mp3',
+        albumArt: 'assets/media/portadas/daddy.jpg'
+    },
     // {
-    //     title: '',
-    //     artist: '',
-    //     src: 'assets/media/audio/.mp3',
-    //     albumArt: 'assets/media/portadas/.jpg'
+    //     title: 'Ella Me Levanto',
+    //     artist: 'Daddy Yankee',
+    //     src: 'assets/media/audio/ellamelevanto.mp3',
+    //     albumArt: 'assets/media/portadas/daddy.jpg'
     // },
+    {
+        title: 'La Despedida',
+        artist: 'Daddy Yankee',
+        src: 'assets/media/audio/ladespedida.mp3',
+        albumArt: 'assets/media/portadas/daddy.jpg'
+    },
+    {
+        title: 'Lovumba',
+        artist: 'Daddy Yankee',
+        src: 'assets/media/audio/lovu.mp3',
+        albumArt: 'assets/media/portadas/daddy.jpg'
+    },
+    {
+        title: 'La Pregunta',
+        artist: 'J Alvarez',
+        src: 'assets/media/audio/lapregunta.mp3',
+        albumArt: 'assets/media/portadas/jalva.jpg'
+    },
+    {
+        title: 'Junto Al Amanecer',
+        artist: 'J Alvarez',
+        src: 'assets/media/audio/amanecer.mp3',
+        albumArt: 'assets/media/portadas/jalva.jpg'
+    },
+    {
+        title: 'Borro Cassette',
+        artist: 'Maluma',
+        src: 'assets/media/audio/borro.mp3',
+        albumArt: 'assets/media/portadas/malu.jpg'
+    },
+    {
+        title: 'Hawái',
+        artist: 'Maluma',
+        src: 'assets/media/audio/hawai.mp3',
+        albumArt: 'assets/media/portadas/hawai.jpg'
+    },
+    {
+        title: 'El Perdedor',
+        artist: 'Maluma',
+        src: 'assets/media/audio/perdedor.mp3',
+        albumArt: 'assets/media/portadas/malu.jpg'
+    },
+    {
+        title: 'Sin Contrato',
+        artist: 'Maluma',
+        src: 'assets/media/audio/contrato.mp3',
+        albumArt: 'assets/media/portadas/malu.jpg'
+    },
+    // {
+    //     title: 'Candy',
+    //     artist: 'Plan B',
+    //     src: 'assets/media/audio/candy.mp3',
+    //     albumArt: 'assets/media/portadas/candy.jpg'
+    // },
+    {
+        title: 'X',
+        artist: 'Nicki Jam, J Balvin',
+        src: 'assets/media/audio/x.mp3',
+        albumArt: 'assets/media/portadas/x.jpg'
+    },
+    {
+        title: 'Bella y Sensual',
+        artist: 'Romeo Santos, Daddy Yankee, Nicki Jam',
+        src: 'assets/media/audio/bella.mp3',
+        albumArt: 'assets/media/portadas/bella.jpg'
+    },
+    {
+        title: 'Te Boté Remix',
+        artist: 'Nio, Bad Bunny, Casper, Darell, Ozuna, Nicky',
+        src: 'assets/media/audio/tebote.mp3',
+        albumArt: 'assets/media/portadas/tebote.jpg'
+    },
+    {
+        title: 'Cuaderno',
+        artist: 'Dalex, J Quiles, Nicky Jam, Sech, Lenny',
+        src: 'assets/media/audio/cuaderno.mp3',
+        albumArt: 'assets/media/portadas/dalex.jpg'
+    },
+    {
+        title: 'Otro Trago - Remix',
+        artist: 'Sech, Ozuna, Anuel, Darell, Nicky Jam',
+        src: 'assets/media/audio/trago.mp3',
+        albumArt: 'assets/media/portadas/trago.jpg'
+    },
+    {
+        title: 'Sobredosis',
+        artist: 'Romeo Santos, Ozuna',
+        src: 'assets/media/audio/sobredosis.mp3',
+        albumArt: 'assets/media/portadas/bella.jpg'
+    },
+    {
+        title: 'La Rompe Corazones',
+        artist: 'Daddy Yankee, Ozuna',
+        src: 'assets/media/audio/corazones.mp3',
+        albumArt: 'assets/media/portadas/corazones.jpg'
+    },
+    {
+        title: 'Otra Vez',
+        artist: 'Zion & Lon, J Balvin',
+        src: 'assets/media/audio/otra.mp3',
+        albumArt: 'assets/media/portadas/otra.jpg'
+    },
+    {
+        title: 'Ay Vamos',
+        artist: 'J Balvin',
+        src: 'assets/media/audio/vamos.mp3',
+        albumArt: 'assets/media/portadas/balvin.jpg'
+    },
+    {
+        title: 'Feliz Cumpleaños Ferxxo',
+        artist: 'Feid',
+        src: 'assets/media/audio/cumple.mp3',
+        albumArt: 'assets/media/portadas/cumple.jpg'
+    },
+    {
+        title: 'CLASSY 101',
+        artist: 'Feid, Young Miko',
+        src: 'assets/media/audio/classy.mp3',
+        albumArt: 'assets/media/portadas/classy.jpg'
+    },
 ];
 
 
