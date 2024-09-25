@@ -612,13 +612,7 @@ const playlist = [
         artist: 'Myke T, Farruko, Arcá, Sech, Zion',
         src: 'assets/media/audio/siseda.mp3',
         albumArt: 'assets/media/portadas/siseda.jpg'
-    },
-    {
-        title: 'Diles',
-        artist: 'Farruko, Ozuna, Bad Bunny, Ñengo',
-        src: 'assets/media/audio/diles.mp3',
-        albumArt: 'assets/media/portadas/diles.jpg'
-    },
+    },
     {
         title: 'Cositas Que Haciamos',
         artist: 'Farruko',
