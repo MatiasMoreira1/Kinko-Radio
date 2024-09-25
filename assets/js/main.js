@@ -588,13 +588,7 @@ const playlist = [
         artist: 'Wisin & Yandel',
         src: 'assets/media/audio/abusadora.mp3',
         albumArt: 'assets/media/portadas/rakata.jpg'
-    },
-    {
-        title: 'Noche de Sexo',
-        artist: 'Wisin & Yandel, Romeo Santos',
-        src: 'assets/media/audio/sexo.mp3',
-        albumArt: 'assets/media/portadas/rakata.jpg'
-    },
+    },
     {
         title: 'Sexy Movimiento',
         artist: 'Wisin & Yandel',
@@ -613,12 +607,12 @@ const playlist = [
         src: 'assets/media/audio/siseda.mp3',
         albumArt: 'assets/media/portadas/siseda.jpg'
     },
-    {
-        title: 'Cositas Que Haciamos',
-        artist: 'Farruko',
-        src: 'assets/media/audio/cositas.mp3',
-        albumArt: 'assets/media/portadas/cositas.jpg'
-    },
+    //{
+      //  title: 'Cositas Que Haciamos',
+      //  artist: 'Farruko',
+      //  src: 'assets/media/audio/cositas.mp3',
+      //  albumArt: 'assets/media/portadas/cositas.jpg'
+ //   },
     {
         title: 'Gasolina',
         artist: 'Daddy Yankee',
@@ -715,12 +709,12 @@ const playlist = [
         src: 'assets/media/audio/bella.mp3',
         albumArt: 'assets/media/portadas/bella.jpg'
     },
-    {
-        title: 'Te Boté Remix',
-        artist: 'Nio, Bad Bunny, Casper, Darell, Ozuna, Nicky',
-        src: 'assets/media/audio/tebote.mp3',
-        albumArt: 'assets/media/portadas/tebote.jpg'
-    },
+   // {
+  //      title: 'Te Boté Remix',
+   //     artist: 'Nio, Bad Bunny, Casper, Darell, Ozuna, Nicky',
+ //       src: 'assets/media/audio/tebote.mp3',
+ //       albumArt: 'assets/media/portadas/tebote.jpg'
+//    },
     {
         title: 'Cuaderno',
         artist: 'Dalex, J Quiles, Nicky Jam, Sech, Lenny',
@@ -733,12 +727,12 @@ const playlist = [
         src: 'assets/media/audio/trago.mp3',
         albumArt: 'assets/media/portadas/trago.jpg'
     },
-    {
-        title: 'Sobredosis',
-        artist: 'Romeo Santos, Ozuna',
-        src: 'assets/media/audio/sobredosis.mp3',
-        albumArt: 'assets/media/portadas/bella.jpg'
-    },
+ //   {
+      //  title: 'Sobredosis',
+ //       artist: 'Romeo Santos, Ozuna',
+  //      src: 'assets/media/audio/sobredosis.mp3',
+//        albumArt: 'assets/media/portadas/bella.jpg'
+//    },
     {
         title: 'La Rompe Corazones',
         artist: 'Daddy Yankee, Ozuna',
