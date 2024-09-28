@@ -877,6 +877,12 @@ audio.addEventListener('ended', function() {
     }
 });
 
+// Escuchar errores de carga de audio
+audio.addEventListener('error', function() {
+    console.error('Error al cargar o reproducir la canción. Saltando a la siguiente...');
+    playNext(); // Llamamos a la función para pasar a la siguiente canción
+});
+
 function changeStatusColor() {
     const colors = ['text-green-600', 'text-red-600', 'text-orange-600'];
     let colorIndex = colors.length - 1; 
