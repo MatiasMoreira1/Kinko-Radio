@@ -468,13 +468,7 @@ const playlist = [
         artist: 'Khea, C.R.O, Neo Pistea',
         src: 'assets/media/audio/100omil.mp3',
         albumArt: 'assets/media/portadas/trapicheo2.jpg'
-    },
-    {
-        title: 'El Don',
-        artist: 'Khea, Bhavi, LIT Killah, Asan',
-        src: 'assets/media/audio/don.mp3',
-        albumArt: 'assets/media/portadas/trapicheo2.jpg'
-    },
+    },
     {
         title: 'Mi Corazon',
         artist: 'Tiago PZK',
