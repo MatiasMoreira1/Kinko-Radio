@@ -24,12 +24,6 @@ const playlist = [
         albumArt: 'assets/media/portadas/somosElShow.jpg'
     },
     {
-        title: 'ASQUEROSO',
-        artist: 'Tiago PZK, ZECCA',
-        src: 'assets/media/audio/asqueroso.mp3',
-        albumArt: 'assets/media/portadas/asqueroso.jpg'
-    },
-    {
         title: 'Ayer Me Llamo Mi Ex',
         artist: 'KHEA, Lenny Santos',
         src: 'assets/media/audio/AMLME.mp3',
@@ -48,12 +42,6 @@ const playlist = [
         albumArt: 'assets/media/portadas/3pecados.jpg'
     },
     {
-        title: 'Hola - Remix',
-        artist: 'Dalex, Lenny Tavarez y mas.',
-        src: 'assets/media/audio/holarmx.mp3',
-        albumArt: 'assets/media/portadas/holarmx.jpg'
-    },
-    {
         title: 'Drama',
         artist: 'Valuto, Fefo',
         src: 'assets/media/audio/drama.mp3',
@@ -64,12 +52,6 @@ const playlist = [
         artist: 'Rels B',
         src: 'assets/media/audio/aMirb.mp3',
         albumArt: 'assets/media/portadas/aMirb.jpg'
-    },
-    {
-        title: 'Ahora dice',
-        artist: 'J Balvin, Ozuna, Bad Bunny',
-        src: 'assets/media/audio/ahoraDice.mp3',
-        albumArt: 'assets/media/portadas/ahoraDice.jpg'
     },
     {
         title: 'CAMAVINGA',
@@ -239,12 +221,6 @@ const playlist = [
         src: 'assets/media/audio/realgangsta.mp3',
         albumArt: 'assets/media/portadas/realgangsta.jpg'
     },
-    // {
-    //     title: 'Tranky Funky',
-    //     artist: 'Trueno',
-    //     src: 'assets/media/audio/tranky.mp3',
-    //     albumArt: 'assets/media/portadas/tranky.jpg'
-    // },
     {
         title: 'Muriendome',
         artist: 'Duki, Khea',
@@ -383,7 +359,6 @@ const playlist = [
         src: 'assets/media/audio/emeyce.mp3',
         albumArt: 'assets/media/portadas/emeyce.jpg'
     },
-    // Puedes agregar más canciones aquí
     {
         title: 'Nena Maldicion',
         artist: 'Paulo Londra, Lenny Tavarez',
@@ -420,7 +395,6 @@ const playlist = [
         src: 'assets/media/audio/sensualidad.mp3',
         albumArt: 'assets/media/portadas/sensualidad.jpg'
     },
-    
     {
         title: 'Otro',
         artist: 'FMK, Khea',
@@ -468,7 +442,7 @@ const playlist = [
         artist: 'Khea, C.R.O, Neo Pistea',
         src: 'assets/media/audio/100omil.mp3',
         albumArt: 'assets/media/portadas/trapicheo2.jpg'
-    },
+    },
     {
         title: 'Mi Corazon',
         artist: 'Tiago PZK',
@@ -559,7 +533,6 @@ const playlist = [
         src: 'assets/media/audio/20.mp3',
         albumArt: 'assets/media/portadas/166.jpg'
     },
-    // Nuevas
     {
         title: 'Algo Me Gusta De Ti',
         artist: 'Wisin & Yandel, Chris Brown, T-Pain',
@@ -577,7 +550,8 @@ const playlist = [
         artist: 'Wisin & Yandel',
         src: 'assets/media/audio/abusadora.mp3',
         albumArt: 'assets/media/portadas/rakata.jpg'
-    },
+    },
+
     {
         title: 'Sexy Movimiento',
         artist: 'Wisin & Yandel',
@@ -590,18 +564,6 @@ const playlist = [
         src: 'assets/media/audio/pepas.mp3',
         albumArt: 'assets/media/portadas/pepas.jpg'
     },
-    {
-        title: 'Si Se Da - Remix',
-        artist: 'Myke T, Farruko, Arcá, Sech, Zion',
-        src: 'assets/media/audio/siseda.mp3',
-        albumArt: 'assets/media/portadas/siseda.jpg'
-    },
-    //{
-      //  title: 'Cositas Que Haciamos',
-      //  artist: 'Farruko',
-      //  src: 'assets/media/audio/cositas.mp3',
-      //  albumArt: 'assets/media/portadas/cositas.jpg'
- //   },
     {
         title: 'Gasolina',
         artist: 'Daddy Yankee',
@@ -626,12 +588,6 @@ const playlist = [
         src: 'assets/media/audio/principe.mp3',
         albumArt: 'assets/media/portadas/daddy.jpg'
     },
-    // {
-    //     title: 'Ella Me Levanto',
-    //     artist: 'Daddy Yankee',
-    //     src: 'assets/media/audio/ellamelevanto.mp3',
-    //     albumArt: 'assets/media/portadas/daddy.jpg'
-    // },
     {
         title: 'La Despedida',
         artist: 'Daddy Yankee',
@@ -680,12 +636,6 @@ const playlist = [
         src: 'assets/media/audio/contrato.mp3',
         albumArt: 'assets/media/portadas/malu.jpg'
     },
-    // {
-    //     title: 'Candy',
-    //     artist: 'Plan B',
-    //     src: 'assets/media/audio/candy.mp3',
-    //     albumArt: 'assets/media/portadas/candy.jpg'
-    // },
     {
         title: 'X',
         artist: 'Nicki Jam, J Balvin',
@@ -698,12 +648,6 @@ const playlist = [
         src: 'assets/media/audio/bella.mp3',
         albumArt: 'assets/media/portadas/bella.jpg'
     },
-   // {
-  //      title: 'Te Boté Remix',
-   //     artist: 'Nio, Bad Bunny, Casper, Darell, Ozuna, Nicky',
- //       src: 'assets/media/audio/tebote.mp3',
- //       albumArt: 'assets/media/portadas/tebote.jpg'
-//    },
     {
         title: 'Cuaderno',
         artist: 'Dalex, J Quiles, Nicky Jam, Sech, Lenny',
@@ -716,12 +660,6 @@ const playlist = [
         src: 'assets/media/audio/trago.mp3',
         albumArt: 'assets/media/portadas/trago.jpg'
     },
- //   {
-      //  title: 'Sobredosis',
- //       artist: 'Romeo Santos, Ozuna',
-  //      src: 'assets/media/audio/sobredosis.mp3',
-//        albumArt: 'assets/media/portadas/bella.jpg'
-//    },
     {
         title: 'La Rompe Corazones',
         artist: 'Daddy Yankee, Ozuna',
@@ -751,6 +689,211 @@ const playlist = [
         artist: 'Feid, Young Miko',
         src: 'assets/media/audio/classy.mp3',
         albumArt: 'assets/media/portadas/classy.jpg'
+    },
+    // Nuevas Canciones.
+    {
+        title: 'Give Me a Kiss',
+        artist: 'Crash Adams',
+        src: 'assets/media/audio/giveme.mp3',
+        albumArt: 'assets/media/portadas/giveme.jpg'
+    },
+    {
+        title: 'Iconicos',
+        artist: 'Ramma',
+        src: 'assets/media/audio/iconicos.mp3',
+        albumArt: 'assets/media/portadas/iconicos.jpg'
+    },
+    {
+        title: 'La Quiero A Morir',
+        artist: 'DLG',
+        src: 'assets/media/audio/dlg.mp3',
+        albumArt: 'assets/media/portadas/dlg.jpg'
+    },
+    {
+        title: 'De Música Ligera',
+        artist: 'Soda Stereo',
+        src: 'assets/media/audio/musica.mp3',
+        albumArt: 'assets/media/portadas/soda.jpg'
+    },
+    {
+        title: 'Ese Maldito Momento',
+        artist: 'No Te Va Gustar',
+        src: 'assets/media/audio/momento.mp3',
+        albumArt: 'assets/media/portadas/ntvg.jpg'
+    },
+    {
+        title: 'Amores Como el Nuestro',
+        artist: 'Karibe con K',
+        src: 'assets/media/audio/amores.mp3',
+        albumArt: 'assets/media/portadas/karibe.jpg'
+    },
+    {
+        title: 'Un Terremoto de Amor',
+        artist: 'Karibe Con K',
+        src: 'assets/media/audio/terremoto.mp3',
+        albumArt: 'assets/media/portadas/karibe.jpg'
+    },
+    {
+        title: 'Deseándote',
+        artist: 'Karibe con K',
+        src: 'assets/media/audio/Deseandote.mp3',
+        albumArt: 'assets/media/portadas/karibe.jpg'
+    },
+    {
+        title: 'Se Parece Más A Ti',
+        artist: 'Jambao',
+        src: 'assets/media/audio/masati.mp3',
+        albumArt: 'assets/media/portadas/jambao.jpg'
+    },
+    {
+        title: 'Shakira',
+        artist: 'L´Autentika',
+        src: 'assets/media/audio/shakira.mp3',
+        albumArt: 'assets/media/portadas/autentika.jpg'
+    },
+    {
+        title: 'Diganle',
+        artist: 'Karina',
+        src: 'assets/media/audio/diganle.mp3',
+        albumArt: 'assets/media/portadas/kari.jpg'
+    },
+    {
+        title: 'Con La Misma Moneda',
+        artist: 'Karina',
+        src: 'assets/media/audio/moneda.mp3',
+        albumArt: 'assets/media/portadas/kari.jpg'
+    },
+    {
+        title: 'No Me Digas Que No',
+        artist: 'Emanero, Karina',
+        src: 'assets/media/audio/nomedigas.mp3',
+        albumArt: 'assets/media/portadas/comovos.jpg'
+    },
+    {
+        title: 'Lo malo de ser bueno',
+        artist: 'El Cuarteto De Nos',
+        src: 'assets/media/audio/malo.mp3',
+        albumArt: 'assets/media/portadas/cuarteto.jpg'
+    },
+    {
+        title: 'Yendo a la Casa de Damián',
+        artist: 'El Cuarteto De Nos',
+        src: 'assets/media/audio/damian.mp3',
+        albumArt: 'assets/media/portadas/cuarteto.jpg'
+    },
+    {
+        title: 'El hijo de Hernández',
+        artist: 'El Cuarteto De Nos',
+        src: 'assets/media/audio/hijo.mp3',
+        albumArt: 'assets/media/portadas/cuarteto.jpg'
+    },
+    {
+        title: 'Bichigyal - Remix',
+        artist: 'PRIZE, Sautu, ARA, Ramma, cnd, Tiano',
+        src: 'assets/media/audio/bichi.mp3',
+        albumArt: 'assets/media/portadas/bichi.jpg'
+    },
+    {
+        title: 'Viernes',
+        artist: 'Ramma',
+        src: 'assets/media/audio/viernes.mp3',
+        albumArt: 'assets/media/portadas/trip.jpg'
+    },
+    {
+        title: 'como si no importara',
+        artist: 'Emilia, Duki',
+        src: 'assets/media/audio/importara.mp3',
+        albumArt: 'assets/media/portadas/emi.jpg'
+    },
+    {
+        title: 'No Da Más',
+        artist: 'YSY A, Duki',
+        src: 'assets/media/audio/nodamas.mp3',
+        albumArt: 'assets/media/portadas/after.jpg'
+    },
+    {
+        title: 'Perdonarte, ¿Para Que?',
+        artist: 'Los Ángeles Azules, Emilia',
+        src: 'assets/media/audio/perdon.mp3',
+        albumArt: 'assets/media/portadas/perdon.jpg'
+    },
+    {
+        title: 'GTA.mp3',
+        artist: 'Emilia',
+        src: 'assets/media/audio/gta.mp3',
+        albumArt: 'assets/media/portadas/mp3.jpg'
+    },
+    {
+        title: 'No_se_ve.mp3',
+        artist: 'Emilia, LUDMILLA',
+        src: 'assets/media/audio/noseve.mp3',
+        albumArt: 'assets/media/portadas/mp3.jpg'
+    },  
+    {
+        title: 'Cuando Te Vi | CO#5',
+        artist: 'Big One, Maria Becerra, Trueno',
+        src: 'assets/media/audio/tevi.mp3',
+        albumArt: 'assets/media/portadas/tevi.jpg'
+    },
+    {
+        title: 'Además De Mí - Remix',
+        artist: 'Rusher, KHEA, Duki, Maria, LIT, Tiago',
+        src: 'assets/media/audio/adm.mp3',
+        albumArt: 'assets/media/portadas/adm.jpg'
+    },
+    {
+        title: 'El Amor De Mi Vida',
+        artist: 'Los Ángeles Azules, Maria Becerra',
+        src: 'assets/media/audio/amor.mp3',
+        albumArt: 'assets/media/portadas/amor.jpg'
+    },
+    {
+        title: 'Forever Alone',
+        artist: 'Paulo Londra',
+        src: 'assets/media/audio/alone.mp3',
+        albumArt: 'assets/media/portadas/nenamal.jpg'
+    },
+    {
+        title: 'PING PONG',
+        artist: 'Sixto Yegros, YSY A',
+        src: 'assets/media/audio/pong.mp3',
+        albumArt: 'assets/media/portadas/pong.jpg'
+    },
+    {
+        title: 'Tu 50',
+        artist: 'Emanero, FMK',
+        src: 'assets/media/audio/tu50.mp3',
+        albumArt: 'assets/media/portadas/comovos.jpg'
+    },
+    {
+        title: 'Sin Corazón',
+        artist: 'KHEA',
+        src: 'assets/media/audio/5.mp3',
+        albumArt: 'assets/media/portadas/sero.jpg'
+    },
+    {
+        title: 'Veneno',
+        artist: 'Asan',
+        src: 'assets/media/audio/veneno.mp3',
+        albumArt: 'assets/media/portadas/bellas.jpg'
+    },
+    {
+        title: 'Vete',
+        artist: 'Asan',
+        src: 'assets/media/audio/vete.mp3',
+        albumArt: 'assets/media/portadas/bellas.jpg'
+    },
+    {
+        title: 'OXICODONA',
+        artist: 'KHEA, Knak',
+        src: 'assets/media/audio/oxicodona.mp3',
+        albumArt: 'assets/media/portadas/trapicheo2.jpg'
+    },
+    {
+        title: 'Cuando Tus Ojos Me Ven',
+        artist: 'uni',
+        src: 'assets/media/audio/ojos.mp3',
+        albumArt: 'assets/media/portadas/ojos.jpg'
     },
 ];
 
@@ -785,7 +928,6 @@ const ads = [
         src: 'assets/media/ads/alfajores.mp3',
         albumArt: 'assets/media/portadas/ads.png'
     },
-    // Puedes agregar más anuncios aquí
 ];
 
 // Seleccionar una canción aleatoria al cargar la página
@@ -857,7 +999,7 @@ function playNext() {
     });
 }
 
-// Seleccionar la primera canción de la lista barajada
+// Seleccionar la primera canción de la lista aleatoria
 currentSongIndex = 0;
 loadMedia(playlist[currentSongIndex]);
 
@@ -867,6 +1009,7 @@ function playNextAndMore(){
 }
 nextButton.addEventListener('click', playNextAndMore);
 
+// Cambiar canción al termino de la actual.
 audio.addEventListener('ended', function() {
     if (isAdPlaying) {
         isAdPlaying = false;
@@ -880,7 +1023,7 @@ audio.addEventListener('ended', function() {
 // Escuchar errores de carga de audio
 audio.addEventListener('error', function() {
     console.error('Error al cargar o reproducir la canción. Saltando a la siguiente...');
-    playNext(); // Llamamos a la función para pasar a la siguiente canción
+    playNext(); 
 });
 
 function changeStatusColor() {
@@ -895,15 +1038,6 @@ function changeStatusColor() {
     }, 400); 
 }
 
-// changeStatusColor();
-
 function changeStatusColorWhite() {
-    // spans.forEach((span) => {
-    //     span.className = '';
-    // });
-
     clearInterval(colorInterval); 
 }
-
-
-// setVolume(0.5)
