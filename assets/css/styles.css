@@ -63,3 +63,9 @@ body::before {
     animation: spin 60s linear infinite; /* Ejemplo de la animación */
     animation-play-state: running; /* Iniciar la animación */
 }
+
+@media screen and (max-width: 1024px) {
+    .navWebs{
+        bottom: 1em;
+    }
+  }
