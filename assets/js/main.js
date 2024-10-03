@@ -895,6 +895,12 @@ const playlist = [
         src: 'assets/media/audio/ojos.mp3',
         albumArt: 'assets/media/portadas/ojos.jpg'
     },
+    {
+        title: 'Sale Sola',
+        artist: 'Roze, Ramky',
+        src: 'assets/media/audio/salesola.mp3',
+        albumArt: 'assets/media/portadas/salesola.jpg'
+    },
 ];
 
 const ads = [
