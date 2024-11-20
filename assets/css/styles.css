@@ -48,6 +48,10 @@ body::before {
     height: 83vh;
 }
 
+#popup {
+    background-color: rgba(7, 5, 5, 0.4); ;
+}
+
 /* CSS PERSONALIZADO DE ESTE ARCHIVO */
 
 @keyframes spin {
