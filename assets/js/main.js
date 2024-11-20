@@ -7,6 +7,9 @@ const nextButton = document.getElementById('next');
 const statusText = document.querySelector('.kinkoRadio p');
 const spans = statusText.querySelectorAll('span');
 const albumArtElement = document.querySelector('.song-image'); 
+const closeButton = document.getElementById("closePopup");
+const popup = document.getElementById("popup");
+
 
 const silence = document.getElementById("silence");
 
@@ -14,6 +17,11 @@ let isPlaying = false;
 let currentSongIndex = 0;
 let songCounter = 0; 
 let isAdPlaying = false; 
+
+// Popup
+closeButton.addEventListener("click", function () {
+    popup.style.display = "none";
+});
 
 // Lista de canciones
 const playlist = [
